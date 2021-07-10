@@ -90,4 +90,30 @@ input:focus{
     border: 1px solid red;
     background-color: white;
 }
+footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #3D3AFF;
+}
+#clear{
+    background-color: #197AFA;
+    position: relative;
+    right: 0px;
+    width: 60px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    display: none;
+}
+#clear:hover{
+    color: red;
+    font-size: 10px;
+    border: 1px solid red;
+    background-color: white;
+}
 
