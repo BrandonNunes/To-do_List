@@ -1,10 +1,10 @@
 var input =  document.getElementById('input');
     btn = document.querySelector(".add");
     list =  document.querySelector(".lista");
-    var clearAll = document.getElementById("clear");
+    clearAll = document.getElementById("clear");
     
 btn.addEventListener("click", () => {
-
+    
     if(input.value.length == 0){
         alert("Por favor adicione algo antes!");
     }else{
@@ -30,32 +30,33 @@ btn.addEventListener("click", () => {
         delet.forEach((del) => {
             del.addEventListener('click',()=>{
                 del.parentElement.remove();
-                
+                return totalTasks.innerText =  `${delet.length}`
             });
         });
-        if(delet.length == 0){
+    if(delet.length == 0){
             clearAll.style.display = "none"
-        }else{
+     }else{
             clearAll.style.display = "block";
         }
             
-        let totalTasks = document.getElementById("tasksN");
+ let totalTasks = document.getElementById("tasksN");
                 
-            totalTasks.innerHTML = `${delet.length}`;
+    totalTasks.innerText =  `${delet.length}`
         
             
-            clearAll.addEventListener("click", () => {
+    clearAll.addEventListener("click", () => {
                 list.innerHTML = "";
                 totalTasks.innerHTML = "0";
                 clearAll.style.display = "none"
                 
             })
 
-            
+           
         
       
        
     });
+   
     
 
     
