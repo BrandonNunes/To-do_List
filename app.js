@@ -30,10 +30,10 @@ btn.addEventListener("click", () => {
         delet.forEach((del) => {
             del.addEventListener('click',()=>{
                 del.parentElement.remove();
-                return totalTasks.innerText =  `${delet.length}`
+                totalTasks.innerText =  `${document.querySelectorAll(".btnr").length}`;
             });
         });
-    if(delet.length == 0){
+    if(delet.length <= 0){
             clearAll.style.display = "none"
      }else{
             clearAll.style.display = "block";
@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
             
  let totalTasks = document.getElementById("tasksN");
                 
-    totalTasks.innerText =  `${delet.length}`
+    totalTasks.innerText =  `${document.querySelectorAll(".btnr").length}`;
         
             
     clearAll.addEventListener("click", () => {
