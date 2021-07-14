@@ -1,2 +1,3 @@
 # To-do_List
-usando html, css, e javascript.
+use html, css, e javascript.
+# Complete, clear all button, and localstorage for save list.

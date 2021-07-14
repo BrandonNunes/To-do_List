@@ -17,6 +17,13 @@ body{
     border-radius: 10px;
     background-color:#A6C3FF;
     padding: 25px;
+    box-shadow: 2px 2px 5px 4px #3D3AFF;
+   
+    
+}
+.anima{
+    animation: toMix .5s ease-in-out;
+animation-iteration-count: 3;
 }
 .content h2{
     text-align: center;
@@ -138,4 +145,26 @@ footer{
 
 
 }
+}
+@media screen and(max-width:414px) {
+    .lista{
+        overflow:auto;
+        height: 400px;
+        width: 100%;
+    }
+.content{
+    height: 900px;
+
+
+}
+}
+@keyframes toMix {
+    0%{
+        transform: translateX(4px);
+    }50%{
+        transform: translateX(-8px);
+    }100%{
+        transform: translateX(0px);
+    }
+    
 }

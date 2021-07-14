@@ -5,6 +5,11 @@ var input =  document.getElementById('input');
     btnr = document.querySelectorAll(".btnr");
     const peding = document.querySelector("#tasksN");
     const deleteAll = document.querySelector("#clear");
+    const anima = document.querySelector(".content");
+    const time = 30000;
+    setInterval( ()=>{
+        anima.classList.toggle("anima");
+    }, time);
     showTodo();
 
    
