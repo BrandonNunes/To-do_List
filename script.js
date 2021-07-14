@@ -14,6 +14,9 @@ var input =  document.getElementById('input');
 
    
     btn.addEventListener("click", () => {
+        if(input.value.length == 0){
+            alert('Por favor Digite algo antes de incluir');
+       }else{
         deleteAll.style.display = "block";
         let getlocalStorage = localStorage.getItem("New todo");
             if(getlocalStorage == null){
@@ -24,7 +27,7 @@ var input =  document.getElementById('input');
             listArr.push(input.value);
             localStorage.setItem("New todo", JSON.stringify(listArr));
                 showTodo();
-    })
+    }});
     function showTodo(){
         let getlocalStorage = localStorage.getItem("New todo");
             if(getlocalStorage == null){
